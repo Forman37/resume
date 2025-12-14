@@ -1,22 +1,125 @@
+// src/components/sections/Hero.jsx
 import Image from "next/image";
-import headshot from "../assets/images/headshots/james-side.jpg";
+import headshot from "../../assets/images/headshots/james-front.jpg";
+import githubIcon from "@/assets/images/icons/github-mark.png";
+import linkedInIcon from "@/assets/images/icons/linkedIn.png";
+import resumeIcon from "@/assets/images/icons/paper.png";
 
 export default function Hero() {
     return (
-        <section className="py-20 bg-gray-50">
-            <div className="flex flex-row items-center justify-center">
-                <Image
-                    src={headshot}
-                    alt="James Forman"
-                    width={160}
-                    height={160}
-                    className="rounded-full object-cover ovject-center"
-                />
-                <div>
-                    <h1 className="text-4xl font-bold text-black">James Forman</h1>
-                    <p className="mt-4 text-lg text-black">Software Engineer | BSCS 2026</p>
+        <>
+            <div className="py-16 bg-white">
+                <div className="container-max flex flex-col md:flex-row items-center gap-8">
+                    {/* Headshot: circular mask + control via scale and object-position */}
+                    <div className="w-50 h-50 rounded-full overflow-hidden flex-shrink-0">
+                        {/* Using fill requires parent relative sizing; here we use fixed width/height instead */}
+                        <Image
+                            src={headshot}
+                            width={200}
+                            height={200}
+                            className="object-cover -translate-y-1"
+                            style={{ transform: "translateY(-15%)" }}
+                            alt="James"
+                        />
+                    </div>
+
+                    <div>
+                        <h1 className="text-slate-900 text-4xl">James Forman</h1>
+                        <p className="mt-3 text-lg text-slate-900">
+                            Software Engineer | BSCS ’26 — React, Node.js, Tailwind
+                        </p>
+
+                        <div className="mt-4 flex gap-6">
+                            <div className="relative group inline-block">
+                                <a
+                                    href="https://www.github.com/forman37"
+                                    className="inline-flex items-center justify-center w-10 h-10 rounded-full overflow-hidden bg-gray-200 hover:brightness-110"
+                                >
+                                    <Image
+                                        src={githubIcon}
+                                        width={200}
+                                        height={200}
+                                        alt="GitHub"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </a>
+                                <div
+                                    className="
+                                      absolute left-1/2 -translate-x-1/2 bottom-full mb-2
+                                      px-2 py-1 rounded-md text-xs text-white bg-black
+                                      opacity-0 translate-y-1
+                                      group-hover:opacity-100 group-hover:translate-y-0
+                                      transition-all duration-200
+                                    "
+                                >
+                                    GitHub
+                                </div>
+                            </div>
+                            <div className="relative group inline-block">
+                                <a
+                                    href="https://www.linkedin.com/in/james-forman-349b026a/"
+                                    title={"LinkedIn"}
+                                    className="inline-flex items-center justify-center w-10 h-10 rounded-full overflow-hidden bg-gray-200 hover:brightness-110"
+                                >
+                                    <Image
+                                        src={linkedInIcon}
+                                        width={200}
+                                        height={200}
+                                        alt="LinkedIn"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </a>
+                                <div
+                                    className="
+                                      absolute left-1/2 -translate-x-1/2 bottom-full mb-2
+                                      px-2 py-1 rounded-md text-xs text-white bg-black
+                                      opacity-0 translate-y-1
+                                      group-hover:opacity-100 group-hover:translate-y-0
+                                      transition-all duration-200
+                                    "
+                                >
+                                    LinkedIn
+                                </div>
+                            </div>
+                            <div className="relative group inline-block">
+                                <a
+                                    href="https://www.github.com/forman37"
+                                    title={"Download Resume"}
+                                    className="border-black inline-flex items-center justify-center w-10 h-10 rounded-full overflow-hidden brightness-110"
+                                >
+                                    <Image
+                                        src={resumeIcon}
+                                        width={200}
+                                        height={200}
+                                        alt="Download Resume"
+                                        className="w-full h-full object-cover hover:brightness-210"
+                                    />
+                                </a>
+                                <div
+                                    className="
+                                      absolute left-1/2 -translate-x-1/2 bottom-full mb-2
+                                      px-2 py-1 rounded-md text-xs text-white bg-black
+                                      opacity-0 translate-y-1
+                                      group-hover:opacity-100 group-hover:translate-y-0
+                                      transition-all duration-200
+                                    "
+                                >
+                                    Download Resume
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div>
+                <hr
+                    style={{
+                        border: "none",
+                        height: "5px",
+                        backgroundColor: "black",
+                    }}
+                />
+            </div>
+        </>
     );
 }
