@@ -34,6 +34,8 @@ export default function Hero() {
                                 <a
                                     href="https://www.github.com/forman37"
                                     className="inline-flex items-center justify-center w-10 h-10 rounded-full overflow-hidden bg-gray-200 hover:brightness-110"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <Image
                                         src={githubIcon}
@@ -58,8 +60,9 @@ export default function Hero() {
                             <div className="relative group inline-block">
                                 <a
                                     href="https://www.linkedin.com/in/james-forman-349b026a/"
-                                    title={"LinkedIn"}
                                     className="inline-flex items-center justify-center w-10 h-10 rounded-full overflow-hidden bg-gray-200 hover:brightness-110"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <Image
                                         src={linkedInIcon}
@@ -83,8 +86,9 @@ export default function Hero() {
                             </div>
                             <div className="relative group inline-block">
                                 <a
-                                    href="https://www.github.com/forman37"
-                                    title={"Download Resume"}
+                                    href="https://docs.google.com/document/d/1DvV2LoatUyJ__o8LhiQoXfMadojkUn_QT_IFKBJ5aLQ/export?format=pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="border-black inline-flex items-center justify-center w-10 h-10 rounded-full overflow-hidden brightness-110"
                                 >
                                     <Image
