@@ -5,6 +5,6 @@
     publishOrigin = "config"
 
 [[plugins]]
-    input = {}
+    inputs = {}
     origin = "config"
     package = "@netlify/plugin-nextjs"
