@@ -1,9 +1,25 @@
-// src/app/page.js (temporary test)
+import Hero from "@/components/sections/Hero.jsx";
+import About from "@/components/sections/About.jsx";
+import ContactMe from "@/components/sections/ContactMe.jsx";
+import Projects from "@/components/sections/Projects.jsx";
+import Education from "@/components/sections/Education.jsx";
+
 export default function Home() {
     return (
-        <main>
-            <h1>DEPLOY TEST — Hello from Netlify</h1>
-            <p>If you see this, static HTML is working.</p>
-        </main>
+        <div className="bg-gray-500 h-screen">
+            <Hero />
+            <div className="flex flex-row justify-center gap-2 bg-gray-500">
+                <div className="flex flex-col justify-center max-w-3xl">
+                    <About />
+                    <div className="flex flex-col gap-2 bg-gray-500">
+                        <Projects />
+                    </div>
+                </div>
+                <div className="flex flex-col max-w-lg">
+                    <ContactMe />
+                    <Education />
+                </div>
+            </div>
+        </div>
     );
 }
