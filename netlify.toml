@@ -5,9 +5,3 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Route all requests to the Netlify Next server function so Next SSR works
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/___netlify-server-handler"
-  status = 200
-  force = true
