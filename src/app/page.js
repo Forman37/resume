@@ -3,6 +3,7 @@ import About from "@/components/sections/About.jsx";
 import ContactMe from "@/components/sections/ContactMe.jsx";
 import Projects from "@/components/sections/Projects.jsx";
 import Education from "@/components/sections/Education.jsx";
+import CodeLanguages from "@/components/sections/CodeLanguages.jsx";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
                 <div className="flex flex-col max-w-2xl md:max-w-lg">
                     <ContactMe />
                     <Education />
+                    <CodeLanguages />
                 </div>
             </div>
         </div>
