@@ -2,6 +2,7 @@ import Hero from "@/components/sections/Hero.jsx";
 import About from "@/components/sections/About.jsx";
 import ContactMe from "@/components/sections/ContactMe.jsx";
 import Projects from "@/components/sections/Projects.jsx";
+import Education from "@/components/sections/Education.jsx";
 
 export default function Home() {
     return (
@@ -14,7 +15,10 @@ export default function Home() {
                         <Projects />
                     </div>
                 </div>
-                <ContactMe />
+                <div className="flex flex-col max-w-lg">
+                    <ContactMe />
+                    <Education />
+                </div>
             </div>
         </div>
     );
