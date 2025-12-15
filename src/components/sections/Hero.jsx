@@ -26,7 +26,7 @@ export default function Hero() {
                     <div>
                         <h1 className="text-slate-900 text-4xl">James Forman</h1>
                         <p className="mt-3 text-lg text-slate-900">
-                            Software Engineer | BSCS ’26 — React, Node.js, Tailwind
+                            Software Engineer | iOS Developer | BSCS ’26
                         </p>
 
                         <div className="mt-4 flex gap-6">
