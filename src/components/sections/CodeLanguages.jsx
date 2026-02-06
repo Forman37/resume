@@ -30,16 +30,16 @@ export default function CodeLanguages() {
             <div className="flex flex-col gap-1 mb-3">
                 <div className="flex flex-row justify-between">
                     <h1>HTML</h1>
-                    <h1 className="text-gray-500">Intermediate</h1>
-                </div>
-                <ProgressBar bgcolor="green" completed="50" />
-            </div>
-            <div className="flex flex-col gap-1 mb-3">
-                <div className="flex flex-row justify-between">
-                    <h1>Tailwind</h1>
                     <h1 className="text-gray-500">Beginner</h1>
                 </div>
                 <ProgressBar bgcolor="green" completed="25" />
+            </div>
+            <div className="flex flex-col gap-1 mb-3">
+                <div className="flex flex-row justify-between">
+                    <h1>Tailwind CSS</h1>
+                    <h1 className="text-gray-500">Intermediate</h1>
+                </div>
+                <ProgressBar bgcolor="green" completed="50" />
             </div>
             <div className="flex flex-col gap-1 mb-3">
                 <div className="flex flex-row justify-between">
@@ -51,9 +51,9 @@ export default function CodeLanguages() {
             <div className="flex flex-col gap-1 mb-3">
                 <div className="flex flex-row justify-between">
                     <h1>C++</h1>
-                    <h1 className="text-gray-500">Beginner</h1>
+                    <h1 className="text-gray-500">Intermediate</h1>
                 </div>
-                <ProgressBar bgcolor="green" completed="25" />
+                <ProgressBar bgcolor="green" completed="50" />
             </div>
             <div className="flex flex-col gap-1 mb-3">
                 <div className="flex flex-row justify-between">
