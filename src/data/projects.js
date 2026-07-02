@@ -1,4 +1,5 @@
 // src/data/projects.js
+import TaskManagerImg from "@/assets/images/projects/task-manager.png";
 import AsuClubsImg from "@/assets/images/projects/asu-clubs.png";
 import PaycheckerImg from "@/assets/images/projects/paychecker-screens-1.png";
 import AsuBookStoreImg from "@/assets/images/projects/asu-bookstore.png";
@@ -21,6 +22,16 @@ const projects = [
             "The question is run through a RAG database to allow accurate, precise information. My part in this is uploading chats to the database, displaying chats for the user, retrieving chats from the database for reuse, and help fine-tuning the lambda functions.",
         tech: ["React", "Tailwind", "ChatGPT API", "AWS Database"],
         image: ExpressExplain,
+    },
+    {
+        id: "clitaskmanager",
+        title: "CLI Task Manager",
+        short:
+            "Command-Line task management application build in C++ with a layer architecture for separating responsibilities. " +
+            "Uses a SQLite-backed persistent storage for supporting multiple tables with full CRUD operations, input validation, and exception handling",
+        tech: ["C++", "SQLite", "Object-Oriented Design"],
+        image: TaskManagerImg,
+        github: "https://github.com/Forman37/CLITaskManager/tree/main",
     },
     {
         id: "asu-clubs",
